@@ -1,4 +1,5 @@
 import { useState } from "react";
+import MaxCount from "./MaxCount";
 
 function App() {
   const [open, isOpen] = useState(false);
@@ -6,7 +7,7 @@ function App() {
   return (
     <div>
       <button onClick={() => isOpen(true)}>Hit me</button>
-      {open && <p>Hi there</p>}
+      {open && <MaxCount />}
     </div>
   );
 }
