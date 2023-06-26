@@ -19,24 +19,25 @@ const shuffle = (array) =>
     // Return back to an array of values
     .map((entry) => entry[1]);
 
-let data = `6497f7b76cb81cc835a089d1,17648,4370641,ณัฏฐพล ไพรรื่นรมย์
-6497f8236cb81cc835a1ef0f,10432,2301787,Pontakorn Paesaeng
-6497f7b46cb81cc835a08219,10236,3066455,Bunyariit Jerdrujikul
-6497f8136cb81cc835a1ba97,8827,2055551,Sirati Hirunthanee
-6497f7af6cb81cc835a07053,8224,2528281,Phatthanakon Takrutthong
-6497f8456cb81cc835a25bae,8201,2300380,อภิเดช เตี่ยไพบูลย์
-6497e5006cb81cc835619845,8145,3485410,Wichayada Chamnansil
-6497e4766cb81cc8355fbee9,7742,2674456,Chanatpakorn Sirintronsopon
-6473a8841cbfde077f2bdc55,7231,1830203,ณัฐพัชร์ พงษ์ธัญญวิชัย
-6497f9eb6cb81cc835a80029,6869,1884496,Gun Pattanaprateepkul`
-  .split("\n")
-  .map((x) => {
-    const d = x.split(",");
-    return {
-      name: d[3],
-      count: parseInt(d[1]),
-    };
-  });
+let data =
+  `6497f7b76cb81cc835a089d1,32106,8245543,ณัฏฐพล ไพรรื่นรมย์,3.8937399271339683
+6497f7e76cb81cc835a12d10,27724,4353495,Chotpisit Adunsehawat,6.368216800524636
+6497f7c26cb81cc835a0ae80,27327,341645,Tanakorn Chotayakrit,79.9865357315342
+6497f8236cb81cc835a1ef0f,12031,2673315,Pontakorn Paesaeng,4.500404927963969
+6497f8136cb81cc835a1ba97,11735,2728824,Sirati Hirunthanee,4.300387273052421
+6497f8456cb81cc835a25bae,11690,3199850,อภิเดช เตี่ยไพบูลย์,3.6532962482616376
+6497e5006cb81cc835619845,11340,4502944,Wichayada Chamnansil,2.5183524378717568
+6497f7b46cb81cc835a08219,10359,3074826,Bunyariit Jerdrujikul,3.368971122268382
+6497f7af6cb81cc835a07053,10193,3153921,Phatthanakon Takrutthong,3.2318501319468687
+6497f87d6cb81cc835a3112d,9272,2768857,Thanapat Dinakara Na Ayudthaya,3.348674200220524`
+    .split("\n")
+    .map((x) => {
+      const d = x.split(",");
+      return {
+        name: d[3],
+        count: parseInt(d[1]),
+      };
+    });
 
 data = shuffle(data);
 

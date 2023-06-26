@@ -16,16 +16,16 @@ const Img = styled.img`
 `;
 
 let data =
-  `6497f7e76cb81cc835a12d10,18239,2931579,Chotpisit Adunsehawat,6.2215618272610085
-6497f8f26cb81cc835a4a497,2437,456811,Katanyoo Thanoosin,5.3348102388077345
-6497f8046cb81cc835a18c4a,2213,436603,Pongwiwat Limpasuthum,5.068677952281592
-6497fd426cb81cc835b40cfc,1111,234371,Natnicha Onporatn,4.740347568598504
-6497f7c26cb81cc835a0b19e,2324,491748,Narongrit Somjaiuraikul,4.725997868827123
-6497f9b96cb81cc835a75a49,979,211078,Panyawut Piyasirinanan,4.6380958697732595
-6497f9456cb81cc835a5c3fd,6264,1356342,Manus Techaphattrapron,4.6183042330031805
-6497fc0a6cb81cc835b00bc8,3505,759771,Worranittha Hukhan,4.613232144948939
-6497f8236cb81cc835a1ef0f,11428,2499282,Pontakorn Paesaeng,4.572513225798449
-6497f8176cb81cc835a1c69c,821,190133,Phiravit Imsuchart,4.3180300105715475`
+  `6497f7b76cb81cc835a089d1,32106,8245543,ณัฏฐพล ไพรรื่นรมย์,3.8937399271339683
+  6497e5006cb81cc835619845,11340,4502944,Wichayada Chamnansil,2.5183524378717568
+  6497f7e76cb81cc835a12d10,27724,4353495,Chotpisit Adunsehawat,6.368216800524636
+  6497f8456cb81cc835a25bae,11690,3199850,อภิเดช เตี่ยไพบูลย์,3.6532962482616376
+  6497f7af6cb81cc835a07053,10193,3153921,Phatthanakon Takrutthong,3.2318501319468687
+  6497f7b46cb81cc835a08219,10359,3074826,Bunyariit Jerdrujikul,3.368971122268382
+  6497e4766cb81cc8355fbee9,9100,3065654,Chanatpakorn Sirintronsopon,2.968371512245022
+  6497f8026cb81cc835a18645,8440,2781522,Watcharaporn Chathaen,3.034309992874405
+  6497f87d6cb81cc835a3112d,9272,2768857,Thanapat Dinakara Na Ayudthaya,3.348674200220524
+  6497f8136cb81cc835a1ba97,11735,2728824,Sirati Hirunthanee,4.300387273052421`
     .split("\n")
     .map((x) => {
       const d = x.split(",");
@@ -69,7 +69,7 @@ export default function MaxSpeed() {
       <br />
 
       {data.map((d, i) => {
-        return <Count id={i + 1} data={d} />;
+        return <Count id={10 - i} data={d} />;
       })}
     </div>
   );

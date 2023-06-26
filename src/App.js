@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MaxCount from "./MaxCount";
 import MaxSpeed from "./MaxSpeed";
+import TimeSpend from "./TimeSpend";
 
 function App() {
   const [open, isOpen] = useState(false);
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <button onClick={() => isOpen(true)}>Hit me</button>
-      {open && <MaxSpeed />}
+      {open && <TimeSpend />}
     </div>
   );
 }
